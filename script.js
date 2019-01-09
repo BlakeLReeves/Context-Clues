@@ -23,9 +23,9 @@ $('h3').css('background-color', 'grey');
 
 function randomAccusation(i) {
 
-    var randomFriend = friends[Math.floor(Math.random()*[i%5])];
-    var randomLocation = locations[Math.floor(Math.random()*[i%10])];
-    var randomWeapon = weapons[Math.floor(Math.random()*[i%20])];
+    var randomFriend = friends[i % 5];
+    var randomLocation = locations[i % 10];
+    var randomWeapon = weapons[i % 20];
 
     function displayAlert() {
 
