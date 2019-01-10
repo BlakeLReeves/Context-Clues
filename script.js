@@ -4,7 +4,7 @@ var weapons = ['pump shotgun', 'sniper rifle', 'desert eagle', 'submachine gun',
 
 for (var i = 0; i < 100; i++) {
 
-    var h3 = $('<h3>Accusation ' + [i] + ':</h3>');
+    var h3 = $('<h3>Accusation ' + [i + 1] + ':</h3>');
     $('body').append(h3);
 
     var getMouseEvent = mouseEvent(h3);
@@ -17,8 +17,6 @@ for (var i = 0; i < 100; i++) {
 
 };
 
-$('h3:first').text('Accusation 100:');
-$('body').append($('h3:first'));
 $('h3').css('background-color', 'grey');
 
 function randomAccusation(i) {
@@ -29,7 +27,7 @@ function randomAccusation(i) {
 
     function displayAlert() {
 
-        alert('Accusation ' + [i] + ': I accuse ' + randomFriend + ', with the ' + randomWeapon + ' at ' + randomLocation + '!');
+        alert('Accusation ' + [i + 1] + ': I accuse ' + randomFriend + ', with the ' + randomWeapon + ' at ' + randomLocation + '!');
 
     }
     return displayAlert;
